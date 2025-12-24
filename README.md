@@ -3,13 +3,18 @@
 ## Project Workflows
 
 - constants
-- config_enity
-- artifact_enity
+- config_entity
+- artifact_entity
 - components
 - pipeline
 - app.py
 
 ## How to run?
+
+Clone the repository
+```bash
+git clone https://github.com/daameya/Hate-Speech-Classification.git
+```
 
 ```bash
 conda create -n hate python=3.8 -y
@@ -27,15 +32,6 @@ pip install -r requirements.txt
 python app.py
 ```
 
-
-# Gcloud cli
-https://dl.google.com/dl/cloudsdk/channels/rapid/GoogleCloudSDKInstaller.exe
-
-```bash
-gcloud init
-```
-
-
 ## Deployment
 
 1. Setting up circleCI
@@ -44,4 +40,3 @@ gcloud init
 4. Configure EC2
 5. config.yml
 6. env variables
-7. 
