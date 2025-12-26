@@ -33,3 +33,18 @@ class DataIngestionConfig:
             self.DATA_INGESTION_ARTIFACTS_DIR,
             self.ZIP_FILE_NAME
         )
+
+
+@dataclass
+class DataValidationConfig:
+    def __init__(self):
+        self.DATA_VALIDATION_ARTIFACTS_DIR: str = os.path.join(
+            os.getcwd(),
+            ARTIFACTS_DIR,
+            DATA_VALIDATION_ARTIFACTS_DIR
+        )
+
+        self.VALIDATION_REPORT_PATH: str = os.path.join(
+            self.DATA_VALIDATION_ARTIFACTS_DIR,
+            DATA_VALIDATION_REPORT_FILE
+        )
